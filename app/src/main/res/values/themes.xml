@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KishiCrew" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#393939</item>
+        <item name="colorPrimaryDark">#393939</item>
+        <item name="colorAccent">#393939</item>
+    </style>
+
+    <style name="Theme.KishiCrew" parent="Base.Theme.KishiCrew" />
+</resources>

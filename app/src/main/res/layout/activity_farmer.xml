@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2A2A"
+    tools:context=".FarmerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#2A2A2A"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Predict Crop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/n_value"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp"
+                android:hint="Enter N"
+                android:backgroundTint="@color/white"/>
+
+            <EditText
+                android:id="@+id/p_value"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:layout_marginStart="5dp"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="5dp"
+                android:paddingStart="15dp"
+                android:hint="Enter P"
+                android:backgroundTint="@color/white"/>
+
+            <EditText
+                android:id="@+id/k_value"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:layout_marginStart="5dp"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="15dp"
+                android:hint="Enter K"
+                android:backgroundTint="@color/white"/>
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/temp_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="15dp"
+            android:hint="Enter temperature"
+            android:backgroundTint="@color/white"/>
+
+        <EditText
+            android:id="@+id/hum_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="15dp"
+            android:hint="Enter humidity"
+            android:backgroundTint="@color/white"/>
+        <EditText
+            android:id="@+id/ph_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="15dp"
+            android:hint="Enter ph"
+            android:backgroundTint="@color/white"/>
+        <EditText
+            android:id="@+id/rain_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="numberDecimal"
+            android:layout_marginEnd="10dp"
+            android:paddingStart="15dp"
+            android:hint="Enter rainfall"
+            android:backgroundTint="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/krishak_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button_rounded"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:inputType="textPersonName"
+            android:layout_marginEnd="40dp"
+            android:paddingStart="15dp"
+            android:hint="Predict"/>
+
+        <TextView
+            android:id="@+id/krishak_result_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="Predicted Crop is: "/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Krishi Crew</string>
+
+    <string name="history_origin">
+        Agriculture in Jammu and Kashmir has a history as rich and diverse as the region itself. Nestled in the northernmost part of India,
+        the states  unique geographical location and climatic conditions have shaped its agriculture over the centuries.
+        The practice of farming in this region dates back to ancient times, with historical references to
+        Kashmir fertile lands found in texts as old as the Mahabharata and Kalhana Rajatarangini.
+    </string>
+
+    <string name="register_now"><u>Register Now</u></string>
+
+</resources>
