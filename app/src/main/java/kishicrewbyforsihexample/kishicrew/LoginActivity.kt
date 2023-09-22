@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                     loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     startActivity(loginIntent)
                     finish()
-                }, 2000)
+                }, 1000)
 
             }else if(selectedChoice=="1"){
                 Handler().postDelayed({
@@ -58,14 +58,14 @@ class LoginActivity : AppCompatActivity() {
                     loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     startActivity(loginIntent)
                     finish()
-                }, 2000)
+                }, 1000)
             }else if(selectedChoice=="2"){
                 Handler().postDelayed({
                     val loginIntent = Intent(applicationContext, ConsumerActivity::class.java)
                     loginIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
                     startActivity(loginIntent)
                     finish()
-                }, 2000)
+                }, 1000)
             }
         }
 

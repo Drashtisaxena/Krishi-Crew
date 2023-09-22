@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2A2A2A"
+    android:layout_height="match_parent"
+    tools:context=".NPKDetectionActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBarNPKDetection"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateDrawable="@drawable/rotating_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp">
+
+    </ProgressBar>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_mainNPKDetection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="#2A2A2A"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:text="NPK Detection"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/n_value"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="@color/white"
+                android:hint="Enter N"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp" />
+
+            <EditText
+                android:id="@+id/p_value"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="@color/white"
+                android:hint="Enter P"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp" />
+
+            <EditText
+                android:id="@+id/k_value"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:backgroundTint="@color/white"
+                android:hint="Enter K"
+                android:inputType="numberDecimal"
+                android:paddingStart="15dp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/temp_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/white"
+            android:hint="Enter temperature"
+            android:inputType="numberDecimal"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/hum_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/white"
+            android:hint="Enter humidity"
+            android:inputType="numberDecimal"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/ph_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/white"
+            android:hint="Enter ph"
+            android:inputType="numberDecimal"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/rain_value"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_rounded"
+            android:backgroundTint="@color/white"
+            android:hint="Enter rainfall"
+            android:inputType="numberDecimal"
+            android:paddingStart="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/krishak_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_rounded"
+            android:hint="Predict"
+            android:inputType="textPersonName"
+            android:paddingStart="15dp" />
+
+        <TextView
+            android:id="@+id/krishak_result_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="80dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="80dp">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circular_shape"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="---"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

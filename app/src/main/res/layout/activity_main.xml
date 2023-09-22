@@ -59,7 +59,7 @@
                 android:id="@+id/read_more_button"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="Read More"
+                android:text="Krishi Pedia"
                 android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="40dp"

@@ -10,4 +10,30 @@
 
     <string name="register_now"><u>Register Now</u></string>
 
+    <string name="farmer_about">"KRISHI CREW" is like a helpful friend to farmers in Jammu and Kashmir. offering a range of advantages.
+        This online portal provides three main services to make farming easier and more successful.
+        First, it helps farmers identify and deal with pests and diseases that can harm their crops,
+        ensuring healthier harvests. Second, it predicts how well crops will do in the upcoming season,
+        so farmers can plan better and know what to expect, which can save them time and resources.
+        It even helps farmers find out what crops are in demand in the market, ensuring they grow the right things.</string>
+
+    <string name="npk_detection_about">
+        NPK (Nitrogen, Phosphorus, and Potassium) detection, when combined with environmental factors like rainfall, temperature, pH, and humidity,
+        plays a pivotal role in revolutionizing agriculture in Jammu and Kashmir. By assessing soil nutrient levels, farmers can fine-tune fertilizer use,
+        promoting healthier crop growth and maximizing yield. This approach aids in crop selection, rotation, and the efficient utilization of resources,
+        as NPK data is intrinsically linked with environmental conditions. Additionally, data-driven decision-making, predictive analytics, and
+        sustainable practices are made possible, leading to precise yield predictions and contributing to food security, while safeguarding the
+        region agricultural sustainability and prosperity
+    </string>
+
+    <string name="insurance_policy_about">
+        Extending insurance policies to farmers in Jammu and Kashmir is a pivotal measure to safeguard their agricultural endeavors from the inherent
+        risks of the region. Tailored insurance schemes can address the unique challenges faced by farmers,
+        including unpredictable weather patterns, natural calamities, and crop-specific vulnerabilities.
+        These policies encompass weather-based, yield-based, and livestock insurance, as well as coverage for agricultural equipment and infrastructure.
+        Furthermore, they can include health insurance for farmers and income protection to shield against income fluctuations.
+        Collaborative efforts between the government, insurance providers, and agricultural experts are essential in designing customized insurance
+        initiatives that are accessible and financially viable for farmers, especially those in remote areas
+    </string>
+
 </resources>

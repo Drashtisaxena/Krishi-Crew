@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         signInButton = findViewById(R.id.signInButton)
 
         readMoreButton.setOnClickListener{
-            scrollView.scrollTo(0, scrollView.getBottom())
+            val loginInte = Intent(applicationContext, Krishipedia::class.java)
+            startActivity(loginInte)
         }
         signInButton.setOnClickListener{
             val loginIntent = Intent(applicationContext, LoginActivity::class.java)
